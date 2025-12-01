@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit de Divulgação | Almas de Pombagira</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;700&family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0f0f0f;
+            color: #fff;
+            font-family: 'Lato', sans-serif;
+        }
+        .card-container {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .pin-card {
+            width: 300px;
+            height: 533px; /* Proporção 9:16 (Pinterest/TikTok) */
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 20px;
+            text-align: center;
+            border: 1px solid #333;
+            transition: transform 0.3s;
+        }
+        .pin-card:hover {
+            transform: scale(1.02);
+            border-color: #d4af37;
+        }
+        
+        /* Estilos Específicos dos Cards */
+        
+        /* CARD 1: O MISTÉRIO (Foco no Quiz) */
+        .card-quiz {
+            background: linear-gradient(180deg, #2a0404 0%, #000000 100%);
+        }
+        .card-quiz::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4z' fill='%238a0a0a' fill-opacity='0.2'/%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+        
+        /* CARD 2: A TRINDADE (Foco no Conteúdo) */
+        .card-content {
+            background: radial-gradient(circle at center, #1a0101 0%, #450a0a 100%);
+            border: 1px solid #d4af37;
+        }
+
+        /* CARD 3: MINIMALISTA (Foco na Marca) */
+        .card-brand {
+            background-color: #000;
+            border: 2px solid #8a0a0a;
+        }
+
+        /* Elementos Visuais */
+        .font-cinzel { font-family: 'Cinzel', serif; }
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        
+        .text-gold { color: #d4af37; text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
+        .text-red { color: #dc2626; }
+        
+        .btn-fake {
+            background: #d4af37;
+            color: #000;
+            padding: 10px 25px;
+            font-weight: bold;
+            border-radius: 50px;
+            text-transform: uppercase;
+            font-size: 14px;
+            margin-top: 20px;
+            box-shadow: 0 0 15px rgba(212,175,55,0.4);
+        }
+
+        .icon-large {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+            filter: drop-shadow(0 0 10px rgba(220, 38, 38, 0.5));
+        }
+    </style>
+</head>
+<body>
+
+    <div class="text-center pt-10 pb-5">
+        <h1 class="text-3xl font-cinzel text-gold mb-2">Conceitos para Pinterest & Stories</h1>
+        <p class="text-gray-400">Use estas ideias visuais para criar seus cards no Canva</p>
+    </div>
+
+    <div class="card-container">
+
+        <!-- CARD 1: QUIZ -->
+        <div class="pin-card card-quiz">
+            <div class="relative z-10 w-full h-full flex flex-col justify-between items-center">
+                <div class="mt-4">
+                    <p class="text-sm tracking-widest uppercase mb-2 text-red-500">Autoconhecimento</p>
+                    <h2 class="text-3xl font-cinzel text-gold leading-tight">Quem é a sua<br>Guardiã?</h2>
+                </div>
+                
+                <div class="animate-pulse">
+                    <svg class="w-24 h-24 text-red-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg>
+                </div>
+
+                <div>
+                    <p class="font-playfair italic text-lg mb-4">"Ela caminha ao seu lado, mesmo que você não veja."</p>
+                    <div class="btn-fake">Faça o Teste Agora</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 2: OBRAS PRIMAS (Grimório/Pontos) -->
+        <div class="pin-card card-content">
+            <div class="relative z-10 w-full h-full flex flex-col justify-between items-center">
+                <div class="border-b border-yellow-600/30 pb-4 w-full">
+                    <h2 class="text-2xl font-cinzel text-white uppercase tracking-widest">Acervo<br>Sagrado</h2>
+                </div>
+
+                <div class="flex flex-col gap-6 w-full px-4">
+                    <div class="flex items-center gap-4 bg-black/40 p-3 rounded-lg border border-red-900">
+                        <span class="text-2xl">📖</span>
+                        <div class="text-left">
+                            <h3 class="font-bold text-gold text-sm uppercase">Grimório</h3>
+                            <p class="text-xs text-gray-300">Conhecimento Oculto</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 bg-black/40 p-3 rounded-lg border border-red-900">
+                        <span class="text-2xl">🎵</span>
+                        <div class="text-left">
+                            <h3 class="font-bold text-gold text-sm uppercase">Pontos Cantados</h3>
+                            <p class="text-xs text-gray-300">A força do atabaque</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 bg-black/40 p-3 rounded-lg border border-red-900">
+                        <span class="text-2xl">🔱</span>
+                        <div class="text-left">
+                            <h3 class="font-bold text-gold text-sm uppercase">Falanges</h3>
+                            <p class="text-xs text-gray-300">Hierarquia Real</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-fake" style="background: transparent; border: 1px solid #d4af37; color: #d4af37;">Acessar Biblioteca</div>
+            </div>
+        </div>
+
+        <!-- CARD 3: MARCA (Tridente) -->
+        <div class="pin-card card-brand">
+            <div class="relative z-10 w-full h-full flex flex-col justify-center items-center">
+                <div class="absolute top-5 left-0 w-full text-center opacity-50 text-xs tracking-[0.5em] uppercase">Alexia Luz de Ferro</div>
+                
+                <div class="relative mb-8">
+                    <div class="absolute -inset-4 bg-red-600 blur-xl opacity-20 animate-pulse"></div>
+                    <svg class="w-32 h-32 text-gold" viewBox="0 0 100 100" fill="currentColor">
+                        <path d="M50 10 C 48 10 46 12 46 14 L 46 65 C 30 55 20 40 20 25 C 20 20 15 20 15 25 C 15 50 35 70 46 75 L 46 90 C 46 95 54 95 54 90 L 54 75 C 65 70 85 50 85 25 C 85 20 80 20 80 25 C 80 40 70 55 54 65 L 54 14 C 54 12 52 10 50 10 Z M 35 25 L 35 35 L 65 35 L 65 25 M 50 10 L 50 35" stroke="currentColor" stroke-width="1" />
+                    </svg>
+                </div>
+
+                <h1 class="text-4xl font-cinzel text-white mb-2">Laroyê</h1>
+                <p class="text-red-500 font-playfair italic">"Quem deve paga,<br>quem merece recebe."</p>
+
+                <div class="absolute bottom-10 w-full text-center">
+                    <div class="text-xs text-gray-500 mb-1">Visite o Portal</div>
+                    <!-- Link ajustado para caber sem cortar -->
+                    <div class="text-gold font-bold" style="font-size: 13px;">alexialuzdeferro.github.io/pombagira</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
